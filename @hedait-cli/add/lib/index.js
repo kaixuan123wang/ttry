@@ -2,22 +2,18 @@
 
 const path = require('path');
 const fse = require('fs-extra');
-const log = require("../../../@hedait-cli/log");
-;
+const log = require("../../../@hedait-cli/log/lib");
 const glob = require('glob');
-const Command = require("../../../@hedait-cli/command");
-;
+const Command = require("../../../@hedait-cli/command/lib");
 const inquirer = require('inquirer');
 const download = require('download-git-repo');
-const formatPath = require("../../../@hedait-cli/format-path");
-
+const formatPath = require("../../../@hedait-cli/format-path/lib")
 
 const getComponentTemplate = require('./getComponentTemplate')
 
 const {
     execAsync
-} = require("../../../@hedait-cli/utils");
-
+} = require("../../../@hedait-cli/utils/lib")
 
 const DEFAULT_PATH = 'src/mini_components'
 class AddCommand extends Command {

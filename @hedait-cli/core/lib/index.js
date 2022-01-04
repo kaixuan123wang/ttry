@@ -9,8 +9,7 @@ const colors = require('colors/safe')
 const userHome = require('user-home')
 const pathExists = require('path-exists').sync
 const commander = require('commander')
-const log = require("../../../@hedait-cli/log");
-
+const log = require("../../../@hedait-cli/log/lib")
 const fse = require('fs-extra');
 // const exec = require('../../exec/lib/index')
 
@@ -54,8 +53,7 @@ function registerCommand() {
                 }
             })
             args[args.length - 1] = o
-            require("../../../@hedait-cli/init");
-(args)
+            require("../../../@hedait-cli/init/lib")(args)
         })
 
     program
@@ -74,8 +72,7 @@ function registerCommand() {
                 }
             })
             args[args.length - 1] = o
-            require("../../../@hedait-cli/set");
-(args)
+            require("../../../@hedait-cli/set/lib")(args)
         })
 
     program
@@ -94,8 +91,7 @@ function registerCommand() {
                 }
             })
             args[args.length - 1] = o
-            require("../../../@hedait-cli/get");
-(args)
+            require("../../../@hedait-cli/get/lib")(args)
         })
 
     program
@@ -114,8 +110,7 @@ function registerCommand() {
                 }
             })
             args[args.length - 1] = o
-            require("../../../@hedait-cli/add");
-(args)
+            require("../../../@hedait-cli/add/lib")(args)
         })
 
     program
@@ -134,8 +129,7 @@ function registerCommand() {
                 }
             })
             args[args.length - 1] = o
-            require("../../../@hedait-cli/reset");
-(args)
+            require("../../../@hedait-cli/reset/lib")(args)
         })
 
     // 开启debug模式
@@ -183,8 +177,7 @@ async function checkGlobalUpdate() {
     const npmName = pkg.name
     const {
         getNpmSemverVersion
-    } = require("../../../@hedait-cli/get-npm-info");
-
+    } = require("../../../@hedait-cli/get-npm-info/lib")
     const lastVersion = await getNpmSemverVersion(npmName, currentVersion)
     if (lastVersion && semver.gt(lastVersion, currentVersion)) {
         log.warn('更新提示', colors.yellow(`请手动更新 ${npmName}, 当前版本 ${currentVersion}, 最新版本 ${lastVersion}

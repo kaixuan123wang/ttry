@@ -1,7 +1,6 @@
 'use strict';
 
-const request = require("../../../@hedait-cli/request");
-;
+const request = require("../../../@hedait-cli/request/lib");
 
 module.exports = function () {
     return request({

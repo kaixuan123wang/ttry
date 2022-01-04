@@ -2,10 +2,8 @@
 
 const semver = require('semver')
 const colors = require('colors')
-const log = require("../../../@hedait-cli/log");
-
-// const {isObject} = require("../../../@hedait-cli/utils");
-
+const log = require("../../../@hedait-cli/log/lib")
+// const {isObject} = require("../../../@hedait-cli/utils/lib")
 
 const LOWEST_NODE_VERSION = '12.0.0'
 

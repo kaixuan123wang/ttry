@@ -1,10 +1,8 @@
 const path = require('path');
 const userHome = require('user-home');
 const fse = require('fs-extra');
-const Command = require("../../../@hedait-cli/command");
-;
-const log = require("../../../@hedait-cli/log");
-;
+const Command = require("../../../@hedait-cli/command/lib");
+const log = require("../../../@hedait-cli/log/lib");
 
 class ResetCommand extends Command {
     init() {

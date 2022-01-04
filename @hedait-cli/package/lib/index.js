@@ -8,15 +8,12 @@ const npminstall = require('npminstall')
 
 const {
   isObject
-} = require("../../../@hedait-cli/utils");
-
-const formatPath = require("../../../@hedait-cli/format-path");
-
+} = require("../../../@hedait-cli/utils/lib")
+const formatPath = require("../../../@hedait-cli/format-path/lib")
 const {
   getDefaultRegistry,
   getNpmLatestVersion
-} = require("../../../@hedait-cli/get-npm-info");
-;
+} = require("../../../@hedait-cli/get-npm-info/lib");
 
 
 class Package {

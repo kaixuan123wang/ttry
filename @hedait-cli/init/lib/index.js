@@ -10,19 +10,14 @@ const semver = require('semver')
 const userHome = require('user-home')
 const download = require('download-git-repo')
 
-const log = require("../../../@hedait-cli/log");
-
-const Command = require("../../../@hedait-cli/command");
-
-const Package = require("../../../@hedait-cli/package");
-
-const formatPath = require("../../../@hedait-cli/format-path");
-
+const log = require("../../../@hedait-cli/log/lib")
+const Command = require("../../../@hedait-cli/command/lib")
+const Package = require("../../../@hedait-cli/package/lib")
+const formatPath = require("../../../@hedait-cli/format-path/lib")
 const {
   spinnerStart,
   execAsync
-} = require("../../../@hedait-cli/utils");
-
+} = require("../../../@hedait-cli/utils/lib")
 
 const getProjectTemplate = require('./getProjectTemplate')
 

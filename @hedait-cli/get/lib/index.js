@@ -5,10 +5,8 @@ const userHome = require('user-home');
 const fse = require('fs-extra');
 const dotenv = require('dotenv');
 const { Table, printTable } = require('console-table-printer');
-const log = require("../../../@hedait-cli/log");
-;
-const Command = require("../../../@hedait-cli/command");
-;
+const log = require("../../../@hedait-cli/log/lib");
+const Command = require("../../../@hedait-cli/command/lib");
 
 class GetCommand extends Command {
     init() {

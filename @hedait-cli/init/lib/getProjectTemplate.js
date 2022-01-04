@@ -2,8 +2,7 @@
 
 const dotenv = require('dotenv');
 const userHome = require('user-home');
-const request = require("../../../@hedait-cli/request");
-;
+const request = require("../../../@hedait-cli/request/lib");
 
 module.exports = function () {
     return request({
