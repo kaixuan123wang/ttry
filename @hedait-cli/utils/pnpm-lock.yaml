@@ -1,0 +1,16 @@
+lockfileVersion: 5.3
+
+specifiers:
+  cli-spinner: ^0.2.10
+
+dependencies:
+  cli-spinner: registry.npmmirror.com/cli-spinner/0.2.10
+
+packages:
+
+  registry.npmmirror.com/cli-spinner/0.2.10:
+    resolution: {integrity: sha1-99YXo29cR6e8Y1PGl/yTOP94Kkc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cli-spinner/download/cli-spinner-0.2.10.tgz}
+    name: cli-spinner
+    version: 0.2.10
+    engines: {node: '>=0.10'}
+    dev: false

@@ -1,0 +1,11 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@hedait-cli/log': file:../../utils/log
+  '@hedait-cli/package': file:../../models/package
+  '@hedait-cli/utils': file:../../utils/utils
+
+dependencies:
+  '@hedait-cli/log': link:../../utils/log
+  '@hedait-cli/package': link:../../models/package
+  '@hedait-cli/utils': link:../../utils/utils

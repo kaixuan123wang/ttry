@@ -1,0 +1,46 @@
+{
+  "name": "@hedait-cli/core",
+  "version": "1.0.6",
+  "description": "@hedait-cli core",
+  "author": "KaixuanWang <w995964550@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "bin": {
+    "hedait": "bin/index.js"
+  },
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\""
+  },
+  "dependencies": {
+    "@hedait-cli/get-npm-info": "workspace:*",
+    "@hedait-cli/exec": "workspace:*",
+    "@hedait-cli/log": "workspace:*",
+    "@hedait-cli/utils": "workspace:*",
+    "@hedait-cli/init": "workspace:*",
+    "@hedait-cli/get": "workspace:*",
+    "@hedait-cli/set": "workspace:*",
+    "@hedait-cli/add": "workspace:*",
+    "@hedait-cli/reset": "workspace:*",
+    "colors": "^1.4.0",
+    "commander": "^8.2.0",
+    "dotenv": "^10.0.0",
+    "import-local": "^3.0.2",
+    "npmlog": "^5.0.1",
+    "path-exists": "^4.0.0",
+    "root-check": "^1.0.0",
+    "semver": "^7.3.5",
+    "user-home": "^3.0.0"
+  },
+  "gitHead": "6eb22ae6d8ecc5e572be4986710666d9227e30e0"
+}

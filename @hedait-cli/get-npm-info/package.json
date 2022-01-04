@@ -1,0 +1,28 @@
+{
+  "name": "@hedait-cli/get-npm-info",
+  "version": "1.0.0",
+  "description": "get npm info",
+  "author": "KaixuanWang <w995964550@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/lipilipi/hedait-cli.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "semver": "^7.3.5",
+    "url-join": "^4.0.1"
+  }
+}
